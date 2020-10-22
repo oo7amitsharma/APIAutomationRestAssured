@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="7" passed="7">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Suite" duration-ms="31169" started-at="2020-10-22T10:58:51 IST" finished-at="2020-10-22T10:59:23 IST">
+    <groups>
+    </groups>
+    <test name="Test" duration-ms="31169" started-at="2020-10-22T10:58:51 IST" finished-at="2020-10-22T10:59:23 IST">
+      <class name="com.adidas.APIAutomation.DeletePet">
+        <test-method status="PASS" signature="deletePet()[pri:1, instance:com.adidas.APIAutomation.DeletePet@536aaa8d]" name="deletePet" duration-ms="1810" started-at="2020-10-22T10:59:19 IST" finished-at="2020-10-22T10:59:21 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- deletePet -->
+        <test-method status="PASS" signature="validateDeletedPet()[pri:2, instance:com.adidas.APIAutomation.DeletePet@536aaa8d]" name="validateDeletedPet" duration-ms="1929" started-at="2020-10-22T10:59:21 IST" finished-at="2020-10-22T10:59:23 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateDeletedPet -->
+      </class> <!-- com.adidas.APIAutomation.DeletePet -->
+      <class name="com.adidas.APIAutomation.AddNewPet">
+        <test-method status="PASS" signature="postData()[pri:0, instance:com.adidas.APIAutomation.AddNewPet@646d64ab]" name="postData" is-config="true" duration-ms="2" started-at="2020-10-22T10:59:03 IST" finished-at="2020-10-22T10:59:03 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- postData -->
+        <test-method status="PASS" signature="testData()[pri:1, instance:com.adidas.APIAutomation.AddNewPet@646d64ab]" name="testData" duration-ms="7752" started-at="2020-10-22T10:59:03 IST" finished-at="2020-10-22T10:59:10 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testData -->
+        <test-method status="PASS" signature="validateAddedPet()[pri:2, instance:com.adidas.APIAutomation.AddNewPet@646d64ab]" name="validateAddedPet" duration-ms="2373" started-at="2020-10-22T10:59:10 IST" finished-at="2020-10-22T10:59:13 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateAddedPet -->
+      </class> <!-- com.adidas.APIAutomation.AddNewPet -->
+      <class name="com.adidas.APIAutomation.UpdatePetStatus">
+        <test-method status="PASS" signature="putData()[pri:0, instance:com.adidas.APIAutomation.UpdatePetStatus@59e5ddf]" name="putData" is-config="true" duration-ms="22" started-at="2020-10-22T10:59:13 IST" finished-at="2020-10-22T10:59:13 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- putData -->
+        <test-method status="PASS" signature="testData()[pri:1, instance:com.adidas.APIAutomation.UpdatePetStatus@59e5ddf]" name="testData" duration-ms="4093" started-at="2020-10-22T10:59:13 IST" finished-at="2020-10-22T10:59:17 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testData -->
+        <test-method status="PASS" signature="validatePutRequest()[pri:2, instance:com.adidas.APIAutomation.UpdatePetStatus@59e5ddf]" name="validatePutRequest" duration-ms="1850" started-at="2020-10-22T10:59:17 IST" finished-at="2020-10-22T10:59:19 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validatePutRequest -->
+      </class> <!-- com.adidas.APIAutomation.UpdatePetStatus -->
+      <class name="com.adidas.APIAutomation.GetAvailablePets">
+        <test-method status="PASS" signature="getStatus()[pri:0, instance:com.adidas.APIAutomation.GetAvailablePets@1b68ddbd]" name="getStatus" duration-ms="11125" started-at="2020-10-22T10:58:52 IST" finished-at="2020-10-22T10:59:03 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getStatus -->
+      </class> <!-- com.adidas.APIAutomation.GetAvailablePets -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
+</testng-results>
