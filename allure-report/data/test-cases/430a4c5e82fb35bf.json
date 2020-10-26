@@ -1,0 +1,130 @@
+{
+  "uid" : "430a4c5e82fb35bf",
+  "name" : "testData",
+  "fullName" : "com.adidas.APIAutomation.AddNewPet.testData",
+  "historyId" : "5ef4da439f53f64a28656987d6a73cc",
+  "time" : {
+    "start" : 1603736706469,
+    "stop" : 1603736714722,
+    "duration" : 8253
+  },
+  "description" : "Call POST request to Add new pet",
+  "descriptionHtml" : "<p>Call POST request to Add new pet</p>\n",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "postData",
+    "time" : {
+      "start" : 1603736706443,
+      "stop" : 1603736706452,
+      "duration" : 9
+    },
+    "description" : "Test Description: Collect the body data for post request",
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "Step 1: Get pet name and pet status for body request",
+      "time" : {
+        "start" : 1603736706444,
+        "stop" : 1603736706449,
+        "duration" : 5
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : false,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 1,
+    "hasContent" : true,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  } ],
+  "testStage" : {
+    "description" : "Call POST request to Add new pet",
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "Step 2: Call POST request with body in we get in Step 1 and get the result, status code etc..",
+      "time" : {
+        "start" : 1603736706470,
+        "stop" : 1603736714718,
+        "duration" : 8248
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : false,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 1,
+    "hasContent" : true,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "package",
+    "value" : "com.adidas.APIAutomation.AddNewPet"
+  }, {
+    "name" : "testClass",
+    "value" : "com.adidas.APIAutomation.AddNewPet"
+  }, {
+    "name" : "testMethod",
+    "value" : "testData"
+  }, {
+    "name" : "parentSuite",
+    "value" : "Suite"
+  }, {
+    "name" : "suite",
+    "value" : "Test"
+  }, {
+    "name" : "subSuite",
+    "value" : "com.adidas.APIAutomation.AddNewPet"
+  }, {
+    "name" : "host",
+    "value" : "M5291282"
+  }, {
+    "name" : "thread",
+    "value" : "25596@M5291282.main(1)"
+  }, {
+    "name" : "framework",
+    "value" : "testng"
+  }, {
+    "name" : "language",
+    "value" : "java"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ {
+      "uid" : "5e7677e6f21cc904",
+      "status" : "broken",
+      "statusDetails" : "petstore.swagger.io",
+      "time" : {
+        "start" : 1603736523814,
+        "stop" : 1603736525555,
+        "duration" : 1741
+      }
+    } ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "430a4c5e82fb35bf.json",
+  "parameterValues" : [ ]
+}

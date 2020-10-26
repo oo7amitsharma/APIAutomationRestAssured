@@ -1,0 +1,130 @@
+{
+  "uid" : "638f41530f85a4c3",
+  "name" : "testData",
+  "fullName" : "com.adidas.APIAutomation.UpdatePetStatus.testData",
+  "historyId" : "271db041b34e18cf4f4fc7a7ae214073",
+  "time" : {
+    "start" : 1603736716462,
+    "stop" : 1603736720012,
+    "duration" : 3550
+  },
+  "description" : "Test Description: Call PUT request to update the pet status",
+  "descriptionHtml" : "<p>Test Description: Call PUT request to update the pet status</p>\n",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "putData",
+    "time" : {
+      "start" : 1603736716452,
+      "stop" : 1603736716456,
+      "duration" : 4
+    },
+    "description" : "Test Description: Get all the required information to call PUT request",
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "Step 1: Get pet id, pet name and pet status",
+      "time" : {
+        "start" : 1603736716452,
+        "stop" : 1603736716456,
+        "duration" : 4
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : false,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 1,
+    "hasContent" : true,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  } ],
+  "testStage" : {
+    "description" : "Test Description: Call PUT request to update the pet status",
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "Step 2: This request change the status of pet from 'available' to 'sold'",
+      "time" : {
+        "start" : 1603736716462,
+        "stop" : 1603736720012,
+        "duration" : 3550
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : false,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 1,
+    "hasContent" : true,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "package",
+    "value" : "com.adidas.APIAutomation.UpdatePetStatus"
+  }, {
+    "name" : "testClass",
+    "value" : "com.adidas.APIAutomation.UpdatePetStatus"
+  }, {
+    "name" : "testMethod",
+    "value" : "testData"
+  }, {
+    "name" : "parentSuite",
+    "value" : "Suite"
+  }, {
+    "name" : "suite",
+    "value" : "Test"
+  }, {
+    "name" : "subSuite",
+    "value" : "com.adidas.APIAutomation.UpdatePetStatus"
+  }, {
+    "name" : "host",
+    "value" : "M5291282"
+  }, {
+    "name" : "thread",
+    "value" : "25596@M5291282.main(1)"
+  }, {
+    "name" : "framework",
+    "value" : "testng"
+  }, {
+    "name" : "language",
+    "value" : "java"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ {
+      "uid" : "d4a10a1817971d1a",
+      "status" : "broken",
+      "statusDetails" : "petstore.swagger.io",
+      "time" : {
+        "start" : 1603736525861,
+        "stop" : 1603736525921,
+        "duration" : 60
+      }
+    } ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "638f41530f85a4c3.json",
+  "parameterValues" : [ ]
+}

@@ -11,6 +11,8 @@ import java.util.HashMap;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
+import io.qameta.allure.Description;
+import io.qameta.allure.Step;
 import io.restassured.RestAssured;
 import io.restassured.response.Response;
 
@@ -18,8 +20,9 @@ public class UpdatePetStatus extends Base{
 	
 
 	@BeforeClass
+	@Description("Test Description: Get all the required information to call PUT request")
+	@Step("Step 1: Get pet id, pet name and pet status")
 	public void putData() throws IOException {
-		
 
 		map.put("id", utilities.getId());
 		category.put("id", "0");
@@ -39,6 +42,8 @@ public class UpdatePetStatus extends Base{
 		
 	}
 	@Test(priority = 1)
+	@Description("Test Description: Call PUT request to update the pet status")
+	@Step("Step 2: This request change the status of pet from 'available' to 'sold'")
 	public void testData() {
 		
 		given()
@@ -68,7 +73,10 @@ public class UpdatePetStatus extends Base{
 		System.out.println("getStatus"+getStatus);
 	}
 	@Test(priority = 2)
-	public void validatePutRequest() {
+	@Description("Test Description: Call GET request to check whether pet status status updated or not")
+	@Step("Step 2: Verify pet status 'sold' and status code '200'")
+	public void validatePutRequest() throws IOException {
+
 		
 		given()
 			.contentType("application/json")
@@ -76,12 +84,12 @@ public class UpdatePetStatus extends Base{
 			.baseUri(baseURI)
 
 		.when()
-			.get(baseURI+"/"+getID)
+			.get(baseURI+"/"+utilities.getId())
 
 		.then()
 			.assertThat()
 			.statusCode(200)
-			.body("category.name", equalTo(getPetName));
+			.body("category.name", equalTo(utilities.getPetName()));
 		
 	}
 

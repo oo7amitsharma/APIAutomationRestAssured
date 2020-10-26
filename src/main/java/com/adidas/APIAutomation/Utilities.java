@@ -7,21 +7,27 @@ import java.io.FileOutputStream;
 import java.io.IOException;
 import java.util.Properties;
 
+import org.testng.annotations.Test;
+
+
 
 public class Utilities {
 	
-	File file = new File("C:\\Users\\jkuma235\\eclipse-workspace\\APIAutomation\\data.properties");
+	
+//	String currentDirectory = System.getProperty("user.dir");
+	File file = new File(System.getProperty("user.dir")+"\\data.properties");
 	FileInputStream fis;
 	FileOutputStream fos;
 	Properties prop = new Properties();
+
 	
 	public String getStatus() throws IOException {
+		
 		fis = new FileInputStream(file);
 		prop.load(fis);
 		String[] petStatus  = prop.getProperty("status").split(",");
 		String available = petStatus[0];
 		return available;
-
 	}
 	
 	public String getUrl() throws IOException {

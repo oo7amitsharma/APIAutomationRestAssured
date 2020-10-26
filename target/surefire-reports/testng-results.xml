@@ -2,53 +2,53 @@
 <testng-results skipped="0" failed="0" ignored="0" total="7" passed="7">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite" duration-ms="28567" started-at="2020-10-22T11:34:05 IST" finished-at="2020-10-22T11:34:34 IST">
+  <suite name="Suite" duration-ms="38629" started-at="2020-10-27T00:15:30 IST" finished-at="2020-10-27T00:16:09 IST">
     <groups>
     </groups>
-    <test name="Test" duration-ms="28567" started-at="2020-10-22T11:34:05 IST" finished-at="2020-10-22T11:34:34 IST">
+    <test name="Test" duration-ms="38629" started-at="2020-10-27T00:15:30 IST" finished-at="2020-10-27T00:16:09 IST">
       <class name="com.adidas.APIAutomation.DeletePet">
-        <test-method status="PASS" signature="deletePet()[pri:1, instance:com.adidas.APIAutomation.DeletePet@77caeb3e]" name="deletePet" duration-ms="1505" started-at="2020-10-22T11:34:31 IST" finished-at="2020-10-22T11:34:32 IST">
+        <test-method status="PASS" signature="deletePet()[pri:1, instance:com.adidas.APIAutomation.DeletePet@7674a051]" name="deletePet" duration-ms="1590" started-at="2020-10-27T00:16:06 IST" finished-at="2020-10-27T00:16:07 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- deletePet -->
-        <test-method status="PASS" signature="validateDeletedPet()[pri:2, instance:com.adidas.APIAutomation.DeletePet@77caeb3e]" name="validateDeletedPet" duration-ms="1558" started-at="2020-10-22T11:34:32 IST" finished-at="2020-10-22T11:34:34 IST">
+        <test-method status="PASS" signature="validateDeletedPet()[pri:2, instance:com.adidas.APIAutomation.DeletePet@7674a051]" name="validateDeletedPet" duration-ms="1968" started-at="2020-10-27T00:16:07 IST" finished-at="2020-10-27T00:16:09 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- validateDeletedPet -->
       </class> <!-- com.adidas.APIAutomation.DeletePet -->
       <class name="com.adidas.APIAutomation.AddNewPet">
-        <test-method status="PASS" signature="postData()[pri:0, instance:com.adidas.APIAutomation.AddNewPet@3e6fa38a]" name="postData" is-config="true" duration-ms="8" started-at="2020-10-22T11:34:18 IST" finished-at="2020-10-22T11:34:18 IST">
+        <test-method status="PASS" signature="postData()[pri:0, instance:com.adidas.APIAutomation.AddNewPet@50d68830]" name="postData" is-config="true" duration-ms="9" started-at="2020-10-27T00:15:53 IST" finished-at="2020-10-27T00:15:53 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- postData -->
-        <test-method status="PASS" signature="testData()[pri:1, instance:com.adidas.APIAutomation.AddNewPet@3e6fa38a]" name="testData" duration-ms="6165" started-at="2020-10-22T11:34:18 IST" finished-at="2020-10-22T11:34:24 IST">
+        <test-method status="PASS" signature="testData()[pri:1, instance:com.adidas.APIAutomation.AddNewPet@50d68830]" name="testData" duration-ms="5499" started-at="2020-10-27T00:15:53 IST" finished-at="2020-10-27T00:15:58 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testData -->
-        <test-method status="PASS" signature="validateAddedPet()[pri:2, instance:com.adidas.APIAutomation.AddNewPet@3e6fa38a]" name="validateAddedPet" duration-ms="1739" started-at="2020-10-22T11:34:24 IST" finished-at="2020-10-22T11:34:26 IST">
+        <test-method status="PASS" signature="validateAddedPet()[pri:2, instance:com.adidas.APIAutomation.AddNewPet@50d68830]" name="validateAddedPet" duration-ms="1836" started-at="2020-10-27T00:15:58 IST" finished-at="2020-10-27T00:16:00 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- validateAddedPet -->
       </class> <!-- com.adidas.APIAutomation.AddNewPet -->
       <class name="com.adidas.APIAutomation.UpdatePetStatus">
-        <test-method status="PASS" signature="putData()[pri:0, instance:com.adidas.APIAutomation.UpdatePetStatus@66a3ffec]" name="putData" is-config="true" duration-ms="4" started-at="2020-10-22T11:34:26 IST" finished-at="2020-10-22T11:34:26 IST">
+        <test-method status="PASS" signature="putData()[pri:0, instance:com.adidas.APIAutomation.UpdatePetStatus@1e53135d]" name="putData" is-config="true" duration-ms="5" started-at="2020-10-27T00:16:00 IST" finished-at="2020-10-27T00:16:00 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- putData -->
-        <test-method status="PASS" signature="testData()[pri:1, instance:com.adidas.APIAutomation.UpdatePetStatus@66a3ffec]" name="testData" duration-ms="3813" started-at="2020-10-22T11:34:26 IST" finished-at="2020-10-22T11:34:29 IST">
+        <test-method status="PASS" signature="testData()[pri:1, instance:com.adidas.APIAutomation.UpdatePetStatus@1e53135d]" name="testData" duration-ms="3540" started-at="2020-10-27T00:16:00 IST" finished-at="2020-10-27T00:16:04 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testData -->
-        <test-method status="PASS" signature="validatePutRequest()[pri:2, instance:com.adidas.APIAutomation.UpdatePetStatus@66a3ffec]" name="validatePutRequest" duration-ms="1551" started-at="2020-10-22T11:34:29 IST" finished-at="2020-10-22T11:34:31 IST">
+        <test-method status="PASS" signature="validatePutRequest()[pri:2, instance:com.adidas.APIAutomation.UpdatePetStatus@1e53135d]" name="validatePutRequest" duration-ms="1636" started-at="2020-10-27T00:16:04 IST" finished-at="2020-10-27T00:16:06 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- validatePutRequest -->
       </class> <!-- com.adidas.APIAutomation.UpdatePetStatus -->
       <class name="com.adidas.APIAutomation.GetAvailablePets">
-        <test-method status="PASS" signature="getStatus()[pri:0, instance:com.adidas.APIAutomation.GetAvailablePets@47c62251]" name="getStatus" duration-ms="10825" started-at="2020-10-22T11:34:07 IST" finished-at="2020-10-22T11:34:18 IST">
+        <test-method status="PASS" signature="getPetStatus()[pri:0, instance:com.adidas.APIAutomation.GetAvailablePets@6ca320ab]" name="getPetStatus" duration-ms="21498" started-at="2020-10-27T00:15:31 IST" description="Get the all available pets" finished-at="2020-10-27T00:15:52 IST">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- getStatus -->
+        </test-method> <!-- getPetStatus -->
       </class> <!-- com.adidas.APIAutomation.GetAvailablePets -->
     </test> <!-- Test -->
   </suite> <!-- Suite -->

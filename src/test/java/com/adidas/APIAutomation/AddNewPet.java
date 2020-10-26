@@ -15,6 +15,8 @@ import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
+import io.qameta.allure.Description;
+import io.qameta.allure.Step;
 import io.restassured.RestAssured;
 import io.restassured.matcher.ResponseAwareMatcher;
 import io.restassured.response.Response;
@@ -23,6 +25,8 @@ public class AddNewPet extends Base{
 	
 
 	@BeforeClass
+	@Description("Test Description: Collect the body data for post request")
+	@Step("Step 1: Get pet name and pet status for body request")
 	public void postData() throws IOException {
 		RestAssured.baseURI = utilities.getUrl();
 		RestAssured.basePath ="";
@@ -39,10 +43,9 @@ public class AddNewPet extends Base{
 		map.put("tags", tags);
 		map.put("status", utilities.getStatus());
 
-		
-
 	}
-	
+	@Description("Call POST request to Add new pet")
+	@Step("Step 2: Call POST request with body in we get in Step 1 and get the result, status code etc..")
 	@Test(priority = 1)
 	public void testData() throws IOException {
 		
@@ -70,13 +73,13 @@ public class AddNewPet extends Base{
 		getID = postResponse.getBody().path("id");
 		getPetName  = postResponse.getBody().path("category.name");
 		getStatus  = postResponse.getBody().path("status");
-
 		utilities.setData(getID.toString());
 			
 	}
 	@Test(priority = 2)
-	public void validateAddedPet() {
-		System.out.println(baseURI+"/"+getID);
+	@Description("Validate new pet added sucessfully or not")
+	@Step("Step 3: Call GET request with ID and get verify the response and status code etc..")
+	public void validateAddedPet() throws IOException {
 		
 			given()
 				.contentType("application/json")
@@ -89,11 +92,8 @@ public class AddNewPet extends Base{
 			.then()
 			.assertThat()
 				.statusCode(200)
-			    .body("category.name", equalTo(getPetName));
-			
-
-
-			
+			    .body("category.name", equalTo(utilities.getPetName()));
+		
 
 	}
 
